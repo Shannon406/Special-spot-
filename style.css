@@ -137,3 +137,37 @@ body::before {
     transform: translateY(-10px);
   }
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .coordinates p {
+    font-size: 5rem; /* Adjust font size for smaller screens */
+  }
+  .message p {
+    font-size: 1.5rem;
+  }
+  .present-box {
+    width: 100px; /* Scale down present box */
+    height: 100px;
+  }
+  .present-label {
+    font-size: 1.2rem; /* Adjust text size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .coordinates p {
+    font-size: 4rem; /* Further adjust for very small screens */
+    letter-spacing: 0.2rem;
+  }
+  .message p {
+    font-size: 1.2rem;
+  }
+  .present-box {
+    width: 80px; /* Smaller present box */
+    height: 80px;
+  }
+  .present-label {
+    font-size: 1rem;
+  }
+}
